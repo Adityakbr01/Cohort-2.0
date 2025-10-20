@@ -1,0 +1,30 @@
+    <!-- ### Project Exercise 19: Local Storage To-Do App
+
+    - **Topic Covered:** HTML, CSS, JavaScript
+    - **Description:** Build a to-do list application that allows users to add, delete, and mark tasks as completed. The tasks should be stored in the browser's local storage, ensuring they persist even after the page is reloaded. Use JavaScript to handle the creation and deletion of tasks, update the DOM accordingly, and utilize the `localStorage` API to save tasks. When the page is refreshed, the tasks should be reloaded from local storage and displayed.
+    - **Skills Covered:** Using `localStorage` for persistent data storage, DOM manipulation to dynamically update the task list, and handling user input with event listeners.  -->
+
+
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do App with Local Storage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="todo-container">
+        <h1>My To-Do List</h1>
+        <form id="todo-form">
+            <input type="text" id="todo-input" placeholder="Add a new task..." required>
+            <button type="submit">Add</button>
+        </form>
+        <ul id="todo-list"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

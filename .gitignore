@@ -1,0 +1,81 @@
+# Node / JavaScript
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnp/
+.pnp.js
+
+# Build outputs
+dist/
+build/
+out/
+coverage/
+.tmp/
+.cache/
+.vite/
+.public/dist/
+
+# Next/Vercel
+.next/
+.vercel/
+.now/
+
+# Create React App / Gatsby / Vite
+.env.local
+.env.*.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Misc dev files
+.DS_Store
+Thumbs.db
+*.log
+*.tgz
+*.zip
+*.tmp
+*.env
+
+# MongoDB
+data/
+data/db/
+dump/
+mongod.lock
+
+# Uploaded / runtime files
+uploads/
+tmp/
+temp/
+*.pid
+*.seed
+
+# Docker
+docker-compose.override.yml
+.env.docker
+
+# IDE / editor
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.user
+*.swp
+
+# Testing / coverage
+coverage/
+.nyc_output/
+
+# Package managers
+# (do not ignore lockfiles unless intentionally needed)
+# pnpm store
+.pnpm-store/
+
+# Optional: OS-specific
+Desktop.ini
+
+# End

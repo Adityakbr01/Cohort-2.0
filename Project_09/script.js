@@ -5,7 +5,6 @@ const equalsButton = document.getElementById("equals");
 
 let currentInput = "";
 
-// Loop through all buttons and handle click
 buttons.forEach(button => {
     button.addEventListener("click", () => {
         const value = button.getAttribute("data-value");
@@ -16,13 +15,12 @@ buttons.forEach(button => {
     });
 });
 
-// Clear the display
 clearButton.addEventListener("click", () => {
     currentInput = "";
     display.value = "";
 });
 
-// Evaluate expression
+
 equalsButton.addEventListener("click", () => {
     try {
         currentInput = eval(currentInput).toString();

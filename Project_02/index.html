@@ -1,0 +1,35 @@
+<!-- ### Project Exercise 2 :- Contact Us Form
+
+- **Topic Covered:** HTML
+- **Description:** Create a "Contact Us" form that includes input fields for name, email, phone number, and a message. The form should have a submit button, and the fields should have basic validation, such as ensuring the name, email, and phone number fields are required before submission. Use appropriate input types and attributes for each field to ensure the form is user-friendly and accessible.
+- **Skills Covered:** Form creation, input elements, form validation, attributes. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 02 | Contact Us Form</title>
+</head>
+<body>
+    <h2>Contact Us</h2>
+    <form action="#" method="post">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required aria-label="Your Name" placeholder="Type your name"><br><br>
+
+        <label for="email">Your Email:</label><br>
+        <input type="email" id="email" name="email" required aria-label="Your Email" placeholder="type Your email"><br><br>
+
+        <label for="phone">Your Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" required pattern="[0-9]{10}" aria-label="Your Phone Number" title="Please enter 10-digit phone number" placeholder="10 digit phone number"><br><br>
+
+        <label for="message">Leave a Message:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required aria-label="Your Message" placeholder="Write your message here..."></textarea><br><br>
+
+        <input type="submit" value="Submit" aria-label="Submit Button">
+    </form>
+</body>
+</html>
+

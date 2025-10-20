@@ -114,5 +114,5 @@ The journey goes step by step:
 
 1. Clone the repo:
    ```bash
-   git clone https://github.com/Adityakbr01/cohort_2.0
+   git clone https://github.com/Adityakbr01/Cohort-2.0
    cd cohort_2.0

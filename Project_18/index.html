@@ -1,0 +1,31 @@
+<!-- ### **Project Exercise 18: Custom Modal Popup**
+
+- **Topic Covered:** HTML, CSS, JavaScript
+- **Description:** Create a custom `modal` popup that appears when a button is clicked. The modal should display a message or content and include a "close" button that hides the modal when clicked. Use JavaScript for event handling, such as showing the modal when the button is clicked and hiding it when the close button is clicked. Style the modal using CSS to ensure it is positioned correctly on the screen and is initially hidden.
+- **Skills Covered:** DOM manipulation for showing and hiding the modal, event handling for button clicks, CSS positioning for the modal, and controlling visibility with CSS and JavaScript. -->       
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Modal Popup</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <button id="openModalBtn">Open Modal</button>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2>Custom Modal</h2>
+            <p>This is a custom modal popup. Click the "×" button or outside the modal to close it.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

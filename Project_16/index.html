@@ -1,0 +1,37 @@
+<!-- ### **Project Exercise 16: Image Slider**
+
+- **Topic Covered:** HTML, CSS, JavaScript, DOM.
+- **Description:** Build an image slider that automatically cycles through a series of images every few seconds. Add next and previous buttons that allow users to manually navigate between images. Use JavaScript `intervals` to control the automatic image transition, and implement event listeners for the next/previous buttons. Apply CSS transitions for smooth image sliding effects. The slider should be responsive, adjusting to different screen sizes.
+- **Skills Covered:** JavaScript intervals for automatic transitions, event listeners for navigation buttons, DOM manipulation for dynamic updates, and CSS transitions for smooth animations
+ -->
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Image Slider — Project 16</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <h1 class="visually-hidden">Image Slider</h1>
+
+    <section class="slider" aria-roledescription="carousel" aria-label="Image Slider">
+      <div class="slides" id="slides">
+        <div class="slide"><img src="https://picsum.photos/id/1015/1200/600" alt="Landscape 1"></div>
+        <div class="slide"><img src="https://picsum.photos/id/1016/1200/600" alt="Landscape 2"></div>
+        <div class="slide"><img src="https://picsum.photos/id/1020/1200/600" alt="Landscape 3"></div>
+        <div class="slide"><img src="https://picsum.photos/id/1024/1200/600" alt="Landscape 4"></div>
+      </div>
+
+      <button class="nav prev" id="prev" aria-label="Previous slide">‹</button>
+      <button class="nav next" id="next" aria-label="Next slide">›</button>
+
+      <div class="dots" id="dots" aria-hidden="false"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

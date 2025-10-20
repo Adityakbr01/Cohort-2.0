@@ -1,0 +1,112 @@
+:root {
+    --bg: #0f1724;
+    --accent: #06b6d4;
+    --muted: #94a3b8
+}
+
+* {
+    box-sizing: border-box
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: system-ui, -apple-system, Segoe UI, Roboto
+}
+
+.container {
+    max-width: 980px;
+    margin: 2rem auto;
+    padding: 0 1rem
+}
+
+/* Slider */
+.slider {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    background: linear-gradient(180deg, #0b1220, #071126)
+}
+
+.slides {
+    display: flex;
+    transition: transform .5s ease;
+    will-change: transform
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover
+}
+
+/* Nav buttons */
+.nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .45);
+    border: 0;
+    color: #fff;
+    padding: .5rem .8rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.6rem
+}
+
+.prev {
+    left: 12px
+}
+
+.next {
+    right: 12px
+}
+
+.nav:focus {
+    outline: 2px solid var(--accent)
+}
+
+/* Dots */
+.dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 12px;
+    display: flex;
+    gap: .5rem
+}
+
+.dots button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(255, 255, 255, .35);
+    cursor: pointer
+}
+
+.dots button.active {
+    background: var(--accent);
+    box-shadow: 0 0 6px rgba(6, 182, 212, .25)
+}
+
+/* Responsive tweaks */
+@media (max-width:600px) {
+    .nav {
+        padding: .35rem .5rem;
+        font-size: 1.2rem
+    }
+
+    .container {
+        margin: 1rem
+    }
+}

@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    background: #1f2937;
+    color: #fff;
+    position: relative;
+    z-index: 20;
+}
+
+.navbar:active {
+    background-color: #a93333;
+}
+
+.navbar .logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 0.5rem 0.75rem;
+    border-radius: 6px;
+    transition: background .15s;
+}
+
+.nav-links li a:hover {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
+
+.hamburger div {
+    width: 26px;
+    height: 3px;
+    background: #fff;
+    border-radius: 2px;
+    transition: transform .25s ease, opacity .2s ease;
+}
+
+
+@media (max-width: 768px) {
+    .nav-links {
+        position: fixed;
+        top: 45px;
+        right: 0;
+        height: calc(100vh - 45px);
+        width: 260px;
+        max-width: 80%;
+        background: #111827;
+        flex-direction: column;
+        padding: 2rem 1.25rem;
+        gap: 1.25rem;
+        transform: translateX(100%);
+        transition: transform .3s cubic-bezier(.2, .8, .2, 1);
+        box-shadow: -6px 0 18px rgba(0, 0, 0, 0.35);
+    }
+
+    .nav-links.nav-active {
+        transform: translateX(0);
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .hamburger.toggle div:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+
+    .hamburger.toggle div:nth-child(2) {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+
+    .hamburger.toggle div:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
+    }
+}

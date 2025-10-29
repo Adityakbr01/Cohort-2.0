@@ -1,0 +1,5 @@
+### **Project Exercise 24: React Memory Game with Component Lifecycle**
+
+- **Topic Covered:** React, Component Lifecycle, Hooks
+- **Description:** Build a memory game app using React where users match pairs of cards. Start by creating a class component and implement the `componentDidMount` method to initialize the game state. Then, refactor the component into a functional one and use the `useEffect` hook to handle side effects like shuffling the cards or checking for matches. Implement the mounting, updating, and unmounting of components when the game starts, and use `useContext` to share the game state (e.g., score, matched cards) across the app.
+- **Skills Covered:** Component lifecycle, `componentDidMount`, `useEffect` hook, managing side effects, `useContext` for global state management, building interactive memory game logic.
